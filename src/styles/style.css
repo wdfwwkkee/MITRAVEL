@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+ol,
+ul {
+    font-family: 'AR One Sans', sans-serif;
+    list-style: none;
+}
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 84px;
+    color: #FFF;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+
+.section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    font-family: 'AR One Sans', sans-serif;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 2.182px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 33px 80px;
+}
+
+
+.first-page {
+    background: url(../img/bg/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 0px;
+}
+
+.promo-left {
+    flex: 0 0 60%;
+}
+
+
+.logo a {
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.header-content {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.category {
+    padding: 18px 30px;
+    border-radius: 24px;
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.book-category {
+    display: inline;
+    background: rgba(28, 46, 61, 0.397);
+    margin-bottom: 40px;
+}
+
+.promo-title {
+    width: 65%;
+    margin-bottom: 40px;
+}
+
+.promo-desc {
+
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.promo-btn {
+    background-color: #E8594E;
+    margin-bottom: 150px;
+}
+
+.promo-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.promo-search input {
+    border: none;
+    border-radius: 4px 0px 0px 0px;
+    width: 100%;
+    height: 120px;
+    font-size: 15px;
+    padding: 50px;
+}
+
+::placeholder {
+    color: #1C2E3D;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+.search-icon {
+    position: absolute;
+    right: 5%;
+}
+
+
+.slider-pagination {
+    background: #73AFBA;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider-play {
+    position: relative;
+}
+
+.slider-play img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.slider-play::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 42px;
+    top: 50%;
+    left: 50%;
+    background: url(../icons/play.svg);
+    background-size: cover;
+}
+
+.slider-name {
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.182px;
+    text-transform: uppercase;
+}
+
+
+.lesson-title {
+    color: #1C2E3D;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 100px;
+}
+
+.lesson-card-list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.lesson-card-item img {
+    border-radius: 8px;
+}
+
+.lesson-card-item {
+    position: relative;
+}
+
+.lesson-card-item:nth-child(2)::after {
+    z-index: 10;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 8px;
+    opacity: 0.9;
+    background: #73AFBA;
+}
+
+.lesson-card-item-title {
+    z-index: 50;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.featured {
+    background: url(../img/featured/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.featured-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 300px;
+}
+
+.featured-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+}
+
+.featured-header::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    width: 245%;
+    height: 100%;
+    bottom: 0;
+    left: -100%;
+    background: linear-gradient(180deg, rgba(28, 46, 59, 0.00) 0%, #091117 100%);
+}
+
+.featured-category {
+    position: relative;
+    z-index: 1;
+    background-color: #E8594E;
+    margin-bottom: 16px;
+}
+
+.featured-title {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 16px;
+}
+
+
+.featured-desc {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+
+.featured-btn {
+    position: relative;
+    z-index: 1;
+    background: #73AFBA;
+}
+
+.featured-stories {
+    padding: 130px 0px 200px 133px;
+    position: relative;
+}
+
+.featured-stories::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: hsla(200, 15%, 28%, 0.818);
+}
+
+.featured-stories-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.featured-stories-title {
+    position: relative;
+    z-index: 10;
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 100px;
+}
+
+.featured-stories-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(227, 227, 227, 0.106);
+}
+
+.featured-stories-item:last-child {
+    border-bottom: none;
+}
+
+.featured-stories-item-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.featured-stories-item-txt-date {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.videos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.videos-title {
+    color: #1C2E3D;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.videos-desc {
+    width: 634px;
+    color: #788692;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.video-slide {
+    position: relative;
+    transition: all .3s linear;
+}
+
+.video-slide img {
+    border-radius: 8px;
+}
+
+.video-slide::after {
+    position: absolute;
+    content: "";
+    width: 112px;
+    height: 112px;
+    top: 10%;
+    left: 5%;
+    transition: all .3s linear;
+    background: url(../icons/Video\ icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.video-slide-txt {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+.newsletter {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/newsletter/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.newsletter::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 46, 61, 0.46);
+}
+
+.newsletter-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-header {
+    flex: 1 1 10%;
+}
+
+.newsletter-title {
+    width: 80%;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 40px;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+.newsletter-desc {
+    width: 43%;
+    font-family: 'AR One Sans', sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+
+
+.sign-Up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-sign-input {
+    color: #1C2E3D;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sign-up-inputs {
+    padding: 76px;
+    background: #FFF;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.sign-Up-mail,
+.sign-Up-tel {
+    position: relative;
+}
+
+
+.sign-Up-form div input {
+    border: none;
+    border-bottom: 1px solid rgba(27, 45, 59, 0.302);
+}
+
+.sign-up-now {
+    text-align: center;
+    padding: 40px 200px;
+    text-align: center;
+    border-radius: 0px 0px 8px 8px;
+    background: #73AFBA;
+}
+
+.sign-up-now a{
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.182px;
+    color: #FFF;
+}
