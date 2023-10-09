@@ -19,6 +19,8 @@ a {
 
 ol,
 ul {
+    padding: 0;
+    margin: 0;
     font-family: 'AR One Sans', sans-serif;
     list-style: none;
 }
@@ -131,17 +133,18 @@ button {
     font-size: 11px;
     font-weight: 400;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .book-category {
     display: inline;
     background: rgba(28, 46, 61, 0.397);
-    margin-bottom: 40px;
 }
 
 .promo-title {
     width: 65%;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .promo-desc {
@@ -468,6 +471,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+
 }
 
 .newsletter::after {
@@ -552,10 +556,329 @@ button {
     background: #73AFBA;
 }
 
-.sign-up-now a{
+.sign-up-now a {
     font-family: 'AR One Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 2.182px;
     color: #FFF;
+}
+
+
+.inspirations-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inspirations-header {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.inspirations-title {
+    color: #1C2E3D;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 25px;
+}
+
+.Inspirations-desc {
+    color: #788692;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.inspirations-card-item {
+    position: relative;
+}
+
+.inspirations-card-item img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.inspirations-category {
+    align-self: flex-end;
+    background: rgba(9, 14, 12, 0.46);
+}
+
+.inspirations-dest {
+    margin-bottom: 8px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+.inspirations-card-title {
+    margin-bottom: 30px;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+
+.inspirations-txt {
+    z-index: 2;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+}
+
+.inspirations-avatars-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inspirations-avatar-item {
+    position: relative;
+}
+
+.inspirations-avatar-item img {
+    position: relative;
+    z-index: 2;
+}
+
+.inspirations-avatar-item::after {
+    z-index: 0;
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: -13%;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.inspirations-avatar-item:nth-child(1) {
+    position: absolute;
+    left: 0;
+}
+
+.inspirations-avatar-item:nth-child(2) {
+    position: absolute;
+    z-index: 10;
+    left: 4%;
+}
+
+.inspirations-avatar-item:nth-child(3) {
+    position: absolute;
+    left: 8%;
+}
+
+
+.inspirations-list {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+.inspirations-card-item:nth-child(1) {
+    grid-column: 8 span;
+}
+
+.inspirations-card-item:nth-child(2) {
+    grid-column: 4 span;
+}
+
+.inspirations-card-item:nth-child(3) {
+    grid-column: 4 span;
+}
+
+.inspirations-card-item:nth-child(4) {
+    grid-column: 4 span;
+}
+
+.inspirations-card-item:nth-child(5) {
+    grid-column: 4 span;
+}
+
+.inspirations-card-item:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #151c24bf;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+
+.inspirations-card-item:nth-child(5) > .inspirations-txt {
+    text-align: center;
+    justify-content: center;
+}
+
+.inspirations-card-item:nth-child(5) > .inspirations-txt > .inspirations-main-txt > .inspirations-avatars-list {
+    position: relative;
+    bottom: -50%;
+    left: 35%;
+}
+
+.inspirations-card-item:nth-child(6) {
+    grid-column: 4 span;
+}
+
+.inspirations-card-item:nth-child(7) {
+    grid-column: 8 span;
+}
+
+
+.inspirations-play-icon {
+    position: relative;
+}
+
+.inspirations-play {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+.inspirations-name {
+    color: #FFF;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.inspirations-card-title-quote {
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+.footer {
+    padding-top: 130px;
+    box-shadow: 0px 1px 0px 0px rgba(179, 179, 179, 0.50) inset;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+
+.footer-nav-list-title {
+    color: #100E0B;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57A773;
+    padding-bottom: 32px;
+    width: 48px;
+}
+
+.footer-nav-list:nth-child(4)>.footer-nav-list-title {
+    width: 121px;
+}
+
+.footer-nav-item a{
+    color: #959EA6;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+
+.nav-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 32px;
+}
+
+.footer-input-email {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.footer-input-email input {
+    width: 100%;
+    padding: 23px 31px;
+    border-radius: 8px;
+    border: 1px solid #E4E4E4;
+    background: transparent;
+}
+
+.user-icon {
+    opacity: 0.5;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+.footer-btn {
+    background-color: #73AFBA;
+    padding: 25px 120px;
+}
+
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 32px 0px;
+}
+
+.footer-copyright::after {
+    content: "";
+    position: absolute;
+    width: 300%;
+    top: -32px;
+    height: 5px;
+    left: -100%;
+    box-shadow: 0px 1px 0px 0px rgba(179, 179, 179, 0.50) inset;
+}
+
+.reversed {
+    color: #959EA6;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.privacy {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.privacy a {
+    color: #959EA6;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Roboto;
 }
